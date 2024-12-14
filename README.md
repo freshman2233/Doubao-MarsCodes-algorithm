@@ -68,8 +68,9 @@ findASingleNumber_1
 
 
 
-
-
+## 4.Others
+### 4.1Format shortcut
+Format code shortcut is: Windows/Linux: Ctrl + Alt + L
 
 
 
