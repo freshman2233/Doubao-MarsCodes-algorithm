@@ -21,3 +21,64 @@ simulate 模拟
 Hash table 哈希表
 Binary search 二分查找
 other 其他
+
+## 3.Problem
+### 3.1 Dynamic programming 动态规划
+supplyProblemsOnTheHike_2
+
+
+
+### 3.2 queue 队列
+
+
+
+### 3.3 Bit operation 位运算
+findASingleNumber_1
+
+### 3.4 stack 栈
+
+
+### 3.5 Maths 数学
+
+
+### 3.6 avarice 贪心
+
+
+### 3.7 Double pointer 双指针
+
+
+### 3.8 Graph theory 图论
+
+
+### 3.9 Wisdom cup 传智杯
+
+
+### 3.0 simulate 模拟
+
+
+### 3.11 Hash table 哈希表
+
+
+### 3.12 Binary search 二分查找
+
+
+### 3.13 other 其他
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
