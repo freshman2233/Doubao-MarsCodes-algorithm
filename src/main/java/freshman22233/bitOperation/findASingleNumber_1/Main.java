@@ -33,12 +33,11 @@ package freshman22233.bitOperation.findASingleNumber_1;
 public class Main {
     public static int solution(int[] cards) {
         // Edit your code here
-        //1.Iteration
-
-
-
-
-        return 0;
+        int uniqueNumber = 0;
+        for (int card : cards) {
+            uniqueNumber ^= card;
+        }
+        return uniqueNumber;
     }
 
     public static void main(String[] args) {
