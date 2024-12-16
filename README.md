@@ -53,8 +53,8 @@ findASingleNumber_1
 ### 3.9 Wisdom cup 传智杯
 
 
-### 3.0 simulate 模拟
-
+### 3.10 simulate 模拟
+numericStringFormatting_3
 
 ### 3.11 Hash table 哈希表
 
