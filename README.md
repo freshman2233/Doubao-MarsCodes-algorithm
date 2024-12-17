@@ -41,7 +41,9 @@ other 其他
 ### 3.5 Maths 数学
 4.Grouping Number To Find Even Sums
 
-### 3.6 avarice 贪心
+### 3.6 Greedy 贪心
+
+6.Little E's Monster Challenge
 
 
 ### 3.7 Double pointer 双指针
@@ -73,7 +75,6 @@ other 其他
 ## 4.Others
 ### 4.1Format shortcut
 Format code shortcut is: Windows/Linux: Ctrl + Alt + L
-
 
 
 
