@@ -1,5 +1,7 @@
 package freshman22233.simulate.findTheBiggestGourd_5;
 
+import java.util.*;
+
 /**
  * 5.Find the Biggest Gourd
  * In a classic Texas Hold'em game,
@@ -25,13 +27,78 @@ package freshman22233.simulate.findTheBiggestGourd_5;
  */
 public class Main {
     public static int[] solution(int n, int max, int[] array) {
-        // Edit your code here
+        // Frequency map for the cards
+        HashMap<Integer, Integer> freq = new HashMap<Integer, Integer>();
+        for (int card : array){
+            // find the value of card, if find put [card, value+1],if don't find, put [card 1]
+            freq.put(card, freq.getOrDefault(card, 0) + 1);
+        }
 
-        return new int[]{0, 0};
+        //lists for candidates
+        List<Integer> triples = new ArrayList<Integer>();
+        List<Integer> pairs = new ArrayList<Integer>();
+
+        //Identify triples and pairs
+        for (Map.Entry<Integer,Integer> entry : freq.entrySet()){
+            int card = entry.getKey();
+            int count = entry.getValue();
+            if (count >= 3){
+                triples.add(card);
+            }
+            if (count >=2){
+                pairs.add(card);
+            }
+        }
+
+        int bestTriple = 0;
+        int bestPair = 0;
+        boolean found = false;
+
+        //Try all full houses
+        for (int t : triples){
+            for (int p : pairs){
+                if (t == p){
+                    continue;
+                }
+                int sum = 3 * t + 2 * p;
+                if (sum <= max){
+                    // check if this full house is better than the current best
+                    if(!found){
+                        bestTriple = t;
+                        bestPair = p;
+                        found = true;
+                    } else {
+                        // compare (bestTriple,bestPair) with (t,p)
+                        if(getRank(t)>getRank(bestTriple)){
+                            bestTriple = t;
+                            bestPair = p;
+                        }else if(getRank(t)==getRank(bestTriple)){
+                            if (getRank(p)>getRank(bestPair)){
+                                bestTriple = t;
+                                bestPair = p;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        if(!found){
+            return new int[]{0, 0};
+        }
+        return new int[]{bestTriple, bestPair};
+    }
+
+    private static int getRank(int card){
+        if (card == 1){
+            return 14;
+        } else {
+            return card;
+        }
     }
 
     public static void main(String[] args) {
         // Add your test cases here
+        System.out.println(java.util.Arrays.equals(solution(31, 42, new int[]{3,3,11,12,12,2,13,5,13,1,13,8,8,1,8,13,12,9,2,11,3,5,8,11,1,11,1,5,4,2,5}), new int[]{1, 13}));
         /**
          * Note: 4 gourds can be formed in array array,
          * namely [6,6,6,8,8],[6,6,6,5,5],[8,8,8,6,6],[ 8,8,8,5,5].
