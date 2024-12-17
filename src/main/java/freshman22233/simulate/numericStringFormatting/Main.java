@@ -1,6 +1,4 @@
-package freshman22233.simulate.numericStringFormatting_3;
-
-import java.util.Scanner;
+package freshman22233.simulate.numericStringFormatting;
 
 /**
  * Numeric String Formating

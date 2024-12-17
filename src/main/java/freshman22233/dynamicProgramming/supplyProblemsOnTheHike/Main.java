@@ -1,4 +1,4 @@
-package freshman22233.dynamicProgramming.supplyProblemsOnTheHike_2;
+package freshman22233.dynamicProgramming.supplyProblemsOnTheHike;
 
 /**
  * 问题描述

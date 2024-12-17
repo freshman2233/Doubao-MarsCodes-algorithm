@@ -1,4 +1,4 @@
-package freshman22233.bitOperation.findASingleNumber_1;
+package freshman22233.bitOperation.findASingleNumber;
 
 /**
  * 1-找单独的数

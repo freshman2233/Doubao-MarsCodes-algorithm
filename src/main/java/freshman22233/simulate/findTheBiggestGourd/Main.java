@@ -1,4 +1,4 @@
-package freshman22233.simulate.findTheBiggestGourd_5;
+package freshman22233.simulate.findTheBiggestGourd;
 
 import java.util.*;
 

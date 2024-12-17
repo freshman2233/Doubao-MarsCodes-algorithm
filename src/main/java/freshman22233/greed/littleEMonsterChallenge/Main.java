@@ -51,10 +51,26 @@ public class Main {
 
         //defined DP array
         int[] dp = new int[count];
+        for (int i = 0; i < count; i++) {
+            dp[i] = 1;
+        }
 
+        //compute DP for the LIS condition
+        for (int i = 0; i < count; i++) {
+            for (int j = i+1; j < count; j++) {
+                if (hh[i]<hh[j] && aa[i]< aa[j]){
+                    dp[j] = Math.max(dp[j], dp[i]+1);
+                }
+            }
+        }
 
+        //Find the max in dp
+        int result = 0;
+        for ( int value : dp ) {
+            result = Math.max(result, value);
+        }
 
-        return 0;
+        return result;
     }
 
     public static void main(String[] args) {

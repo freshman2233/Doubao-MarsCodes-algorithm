@@ -1,4 +1,4 @@
-package freshman22233.maths.groupingNumberToFindEvenSums_4;
+package freshman22233.maths.groupingNumberToFindEvenSums;
 
 /**
  * Problem description

@@ -26,7 +26,7 @@ other 其他
 ### 3.1 Dynamic programming 动态规划
 2.Supply Problems On The Hike
 
-
+6.Little E's Monster Challenge
 
 ### 3.2 queue 队列
 
@@ -44,6 +44,8 @@ other 其他
 ### 3.6 Greedy 贪心
 
 6.Little E's Monster Challenge
+
+7.creative Title Matching Problem
 
 
 ### 3.7 Double pointer 双指针
