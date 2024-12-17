@@ -47,6 +47,7 @@ other 其他
 
 7.creative Title Matching Problem
 
+8.Find the numbers that account for more than half of the integer
 
 ### 3.7 Double pointer 双指针
 
