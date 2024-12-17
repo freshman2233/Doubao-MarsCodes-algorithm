@@ -24,7 +24,7 @@ other 其他
 
 ## 3.Problem
 ### 3.1 Dynamic programming 动态规划
-supplyProblemsOnTheHike_2
+2.Supply Problems On The Hike
 
 
 
@@ -33,13 +33,13 @@ supplyProblemsOnTheHike_2
 
 
 ### 3.3 Bit operation 位运算
-findASingleNumber_1
+1.Find A Single Number
 
 ### 3.4 stack 栈
 
 
 ### 3.5 Maths 数学
-\
+4.Grouping Number To Find Even Sums
 
 ### 3.6 avarice 贪心
 
@@ -54,7 +54,9 @@ findASingleNumber_1
 
 
 ### 3.10 simulate 模拟
-numericStringFormatting_3
+3.Numeric String Formatting
+
+5.Find the Biggest Gourd
 
 ### 3.11 Hash table 哈希表
 
